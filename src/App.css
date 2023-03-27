@@ -1,0 +1,11 @@
+html {
+  margin: 0;
+  /* --s: 50px;
+  --g: #ECEDDC 90deg, #0000 90.5deg;
+  background:
+    conic-gradient(from -45deg, var(--g)),
+    conic-gradient(from 135deg, var(--g))
+      calc(var(--s)/2) 0, #2ebb46;
+  background-size: var(--s) var(--s); */
+}
+

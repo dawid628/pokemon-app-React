@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    background-color:#000531;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 15px;
+}
+ .navbar-items {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.navbar-items h2 {
+    margin: 0 20px;
+    background: linear-gradient(to left, rgb(236, 255, 68), rgb(101, 105, 41));
+    background-size: 100% 200%;
+    background-clip: text;
+    color:#fff;
+    transition: color .2s;
+}
+
+.navbar-items h2:hover {
+    color:rgba(0,0,0,0);
+}
+
+.navbar-logo img {
+    width: 8rem;
+    height: 3rem;
+    padding: .7rem;
+}
