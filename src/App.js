@@ -1,30 +1,33 @@
-import { useState, useEffect } from 'react';
 import './App.css';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'; //, Routes, Route, useLocation
 import axios from 'axios';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import { BrowserRouter as Router } from 'react-router-dom'; //, Routes, Route, useLocation
+import Pokemons from './components/Pokemons';
 
-const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=281&offset=281'
+
+const URL = 'https://pokeapi.co/api/v2/pokemon/'
 
 function App() {
   
   const [pokemon, setPokemon] = useState([])
+  const [count, setCount] = useState(25)
   
   useEffect(() => {
-    axios.get(URL)
+    axios.get(URL + '?limit=' + count + '&offset=0')
     .then(response => {
+      console.log('changed')
       setPokemon(response.data.results)
-      console.log(pokemon)
     })
-  }, []);
+  }, [count]);
 
   return (
     <>
       <Router>
         <Navbar/>
         <Home/>
-        {/* Pokemons */}
+        <Pokemons pokemons={pokemon} count={count} setCount={setCount}/>
       </Router>
     </>
   );
