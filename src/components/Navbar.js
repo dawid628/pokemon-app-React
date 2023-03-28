@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
       <div className='navbar'>
           <div className="navbar-logo">
             <Link to='/'>
@@ -21,9 +20,9 @@ const Navbar = () => {
             <Link style={{textDecoration: 'none'}}>
               <h2>Join us</h2>
             </Link>
+            {/* QUIZ??? */}
         </div>
       </div>
-    </div>
   )
 }
 

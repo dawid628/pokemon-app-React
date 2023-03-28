@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; //, Routes, Route, useLocation
 
 const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=281&offset=281'
 
