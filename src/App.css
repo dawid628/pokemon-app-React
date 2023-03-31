@@ -1,4 +1,6 @@
 html {
+  margin: 0;
+  height: 100%;
   --s: 100px;
   --g: #273646 90deg, #0000 90.5deg;
   background:

@@ -5,6 +5,7 @@ import axios from 'axios';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Pokemons from './components/Pokemons';
+import Footer from './components/Footer';
 
 
 const URL = 'https://pokeapi.co/api/v2/pokemon/'
@@ -28,6 +29,7 @@ function App() {
         <Navbar/>
         <Home/>
         <Pokemons pokemons={pokemon} count={count} setCount={setCount}/>
+        <Footer/>
       </Router>
     </>
   );
