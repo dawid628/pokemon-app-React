@@ -18,7 +18,7 @@ const Navbar = () => {
               <h2>Pokemon</h2>
             </Link>
             <Link style={{textDecoration: 'none'}}>
-              <h2>Join us</h2>
+              <h2>Join</h2>
             </Link>
             {/* QUIZ??? */}
         </div>

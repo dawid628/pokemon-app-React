@@ -7,7 +7,7 @@ const Pokemons = ({ pokemons, count, setCount }) => {
     return (
         <div className='pokemons-container'>
             <div className='pokemons-header'>
-                <p>POKÉMON</p>
+                <p>POKÉMON LIBRARY</p>
             </div>
             {
                 pokemons.map((pokemon, index) => {

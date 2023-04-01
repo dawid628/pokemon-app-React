@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Pokemons from './components/Pokemons';
 import Footer from './components/Footer';
 import Pokemon from './components/Pokemon';
+import Join from './components/Join';
 
 
 const URL = 'https://pokeapi.co/api/v2/pokemon/'
@@ -36,6 +37,7 @@ function App() {
             </Route>
         </Routes>
       </Router>
+      <Join/>
       <Footer/>
     </>
   );
