@@ -1,49 +1,131 @@
-.pokemon-card {
-    --c: #65e1f7; /* the border color */
-    --b: 5px;    /* the border thickness*/
-    --g: 2px;     /* the gap on hover */
-
-    width: 200px;
-    block-size: fit-content;
-    border-radius: 1rem;
-    margin: 2rem;
-    align-items: center;
-  
-    padding: 2rem 1rem;
-    --_g: #0000 25%,var(--c) 0;
-    background:
-        conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
-        var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
-        conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
-        0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
-    transition: .1s, background-position .1s .1s;
-    background-color: #5d4cf7;
-    box-shadow: 0 0 5px #5d4cf7;
+.pokemon-view {
+    display: flex;
+    height: 25rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    justify-content: center;
 }
 
-.pokemon-card:hover {
-    border: none;
-    --_i: 100%;
-    transition: .1s, background-size .1s .1s;
+.pokemon-picture {
+    width: 20rem;
+    height: 20rem;
 }
 
-.pokemon-card .name{
+.pokemon-stats {
+    display: flex;
+    justify-content: space-between;
+    order: 1; /* przesuwa element 'pokemon-right' na prawą stronę 'pokemon-picture' */
     color: #fff;
-    font-size: 2rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .pokemon-stats ul {
+    flex: 1;
+  }
+
+.pokemon-stats li {
+    list-style: none;
+    padding: .2rem 0;
+    width: 10rem;
+    border-radius: 25px;
+    text-align: center;
+    margin: .7rem 0;
 }
 
-.pokemon-card img {
-    display: block;
-    margin: auto;
-    width: 70%;
-    height: 70%;
-    border-bottom: 2px solid black;
+.pokemon-stats ul:last-child,
+    .pokemon-stats ul:last-child li {
+        justify-content: flex-start;
+        text-align: start;
+  }
+
+.bug {
+    border: 2px solid rgb(18, 128, 10);
+    background-color: rgba(13, 100, 6, .4);
 }
 
-.pokemon-card h3 {
-    color: #092d50;
-    margin-left: 5px;
-    margin: 5px;
+.poison {
+    border: 2px solid rgb(152, 31, 177);
+    background-color: rgba(152, 31, 177, .4);
+}
+
+.fire {
+    border: 2px solid rgb(199, 18, 18);
+    background-color: rgba(199, 18, 18, .4);
+}
+
+.normal {
+    border: 2px solid rgb(255, 254, 254);
+    background-color: rgba(255, 254, 254, .4);
+}
+
+.water {
+    border: 2px solid rgb(39, 126, 197);
+    background-color: rgba(39, 126, 197, .4);
+}
+
+.grass {
+    border: 2px solid rgb(39, 219, 15);
+    background-color: rgba(39, 219, 15, .4);
+}
+
+.electric {
+    border: 2px solid rgb(239, 255, 9);
+    background-color: rgba(239, 255, 9, .4);
+}
+
+.ice {
+    border: 2px solid rgb(30, 184, 223);
+    background-color: rgba(30, 184, 223, .4);
+}
+
+.fighting {
+    border: 2px solid rgb(231, 142, 9);
+    background-color: rgba(231, 142, 9, .4);
+}
+
+.ground {
+    border: 2px solid rgb(65, 28, 3);
+    background-color: rgba(65, 28, 3, .4);
+}
+
+.flying {
+    border: 2px solid rgb(175, 93, 38);
+    background-color: rgba(175, 73, 5, .4);
+}
+
+.psychic {
+    border: 2px solid rgb(161, 152, 15);
+    background-color: rgba(161, 152, 15, .4);
+}
+
+.rock {
+    border: 2px solid rgb(160, 160, 159);
+    background-color: rgba(160, 160, 159, .4);
+}
+
+.ghost {
+    border: 2px solid rgb(89, 0, 190);
+    background-color: rgba(89, 0, 190, .4);
+}
+
+.dragon {
+    border: 2px solid rgb(2, 19, 167);
+    background-color: rgba(2, 19, 167, .4);
+}
+
+.dark {
+    border: 2px solid rgb(30, 33, 34);
+    background-color: rgba(30, 33, 34, .4);
+}
+
+.steel {
+    border: 2px solid rgb(92, 132, 146);
+    background-color: rgba(92, 132, 146, .4);
+}
+
+.fairy {
+    border: 2px solid rgb(230, 11, 200);
+    background-color: rgba(230, 11, 200, .4);
 }

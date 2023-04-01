@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Pokemons.css'
-import Pokemon from './Pokemon'
+import PokemonItem from './PokemonItem'
 
 const Pokemons = ({ pokemons, count, setCount }) => {
 
@@ -12,7 +12,7 @@ const Pokemons = ({ pokemons, count, setCount }) => {
             {
                 pokemons.map((pokemon, index) => {
                     return (
-                        <Pokemon key={index} item={pokemon}/>
+                        <PokemonItem key={index} item={pokemon}/>
                     )
                 })
             }

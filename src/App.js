@@ -1,11 +1,12 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'; //, Routes, Route, useLocation
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; //, Routes, Route, useLocation
 import axios from 'axios';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Pokemons from './components/Pokemons';
 import Footer from './components/Footer';
+import Pokemon from './components/Pokemon';
 
 
 const URL = 'https://pokeapi.co/api/v2/pokemon/'
@@ -27,12 +28,23 @@ function App() {
     <>
       <Router>
         <Navbar/>
-        <Home/>
-        <Pokemons pokemons={pokemon} count={count} setCount={setCount}/>
-        <Footer/>
+        <HomeWrapper/>
+        <Routes>
+            <Route path='/' element={<Pokemons pokemons={pokemon} count={count} setCount={setCount}/>}></Route>
+            <Route path='/pokemon' element={<Pokemon />}>
+              <Route path=':pokemonId' element={<Pokemon />} />
+            </Route>
+        </Routes>
       </Router>
+      <Footer/>
     </>
   );
+}
+
+
+function HomeWrapper() {
+  const location = useLocation();
+  return location.pathname === '/pokemons' && <Home/>;
 }
 
 export default App;
