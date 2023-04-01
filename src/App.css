@@ -1,12 +1,9 @@
 html {
   margin: 0;
-  height: 100%;
-  --s: 100px;
-  --g: #273646 90deg, #0000 90.5deg;
-  background:
-    conic-gradient(from -45deg, var(--g)),
-    conic-gradient(from 135deg, var(--g))
-      calc(var(--s)/2) 20px, #1b252f;
-  background-size: var(--s) var(--s);
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #020f1b; /* scrollbar color*/
+  background-image: radial-gradient(circle at 70% 70%, #20588f 5%, #0e1c30 100%);
+  background-size: cover;
 }
 

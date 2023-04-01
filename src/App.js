@@ -44,7 +44,7 @@ function App() {
 
 function HomeWrapper() {
   const location = useLocation();
-  return location.pathname === '/pokemons' && <Home/>;
+  return location.pathname === '/' && <Home/>;
 }
 
 export default App;

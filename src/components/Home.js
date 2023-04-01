@@ -5,11 +5,9 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-header'>
-          <h2>Pokémon<img src={process.env.PUBLIC_URL + '/images/pokeball.png'} alt='pokeball'/></h2>
+          <h2>PokéSphere<img src={process.env.PUBLIC_URL + '/images/pokeball.png'} alt='pokeball'/></h2>
           <p>Gotta catch 'em all!</p>
-          
         </div>
-        
     </div>
   )
 }
