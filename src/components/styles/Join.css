@@ -48,3 +48,25 @@
     margin-top: 0;
     margin-bottom: 100px;
 }
+
+@media screen and (width <= 1240px) {
+  .discord-invite {
+  height: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  }
+  
+  .discord-invite h2, .discord-invite p {
+  font-size: 5em;
+  }
+  
+  .discord-invite a {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  }
+  
+  .discord-invite h4 {
+  margin-bottom: 2rem;
+  }
+  }

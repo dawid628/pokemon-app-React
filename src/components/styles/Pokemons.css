@@ -33,3 +33,13 @@
     background-color: #65e1f7;
     cursor: pointer;
 }
+
+@media only screen and (width < 1920px) {
+    .pokemons-container {
+      margin: 0 1rem;
+    }
+
+    .pokemons-container button {
+        width: 80%;
+    }
+  }

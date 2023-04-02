@@ -79,7 +79,11 @@ footer .legal > span {
     gap: 18px;
   }
 
-  @media(width < 620px) {
+  footer.bottom .links > a {
+  font-size: 24px;
+}
+
+@media(width < 768px) {
     footer {
       flex-direction: column;
     }
@@ -88,8 +92,27 @@ footer .legal > span {
       gap: 16px;
       flex-direction: column-reverse;
     }
+    footer.top .links > div > p {
+      font-size: 13px;
+    }
+    footer.top > p {
+      margin: 0;
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    footer.top .links > div > a {
+      font-size: 13px;
+    }
+
   }
-footer.bottom .links > a {
-  font-size: 24px;
-}
+  @media(width < 600px) {
+    footer.top .links > div > p {
+      font-size: 10px;
+    }
+    footer.top .links > div > a {
+      font-size: 10px;
+    }
+  }
  

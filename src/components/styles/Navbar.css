@@ -15,7 +15,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
  .navbar-items {
     display: flex;
@@ -39,4 +39,37 @@
     width: 8rem;
     height: 3rem;
     padding: .7rem;
+}
+
+@media (width <= 1024px) {
+
+    .navbar-items {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        width: 100%;
+        background-color: #000531;
+    }
+
+    .navbar-items h2 {
+        margin: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar-items.active {
+        display: flex;
+    }
+}
+
+@media (width <= 598px) {
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar-items {
+        justify-content: center;
+        position: absolute;
+    }
+
 }
