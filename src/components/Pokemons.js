@@ -2,10 +2,10 @@ import React from 'react'
 import './styles/Pokemons.css'
 import PokemonItem from './PokemonItem'
 
-const Pokemons = ({ pokemons, count, setCount }) => {
+const Pokemons = ({ pokemons, count, setCount, pokemonRef }) => {
 
     return (
-        <div className='pokemons-container'>
+        <div ref={pokemonRef} className='pokemons-container'>
             <div className='pokemons-header'>
                 <p>POKÉMON LIBRARY</p>
             </div>

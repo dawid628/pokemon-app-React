@@ -1,6 +1,6 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; //, Routes, Route, useLocation
+import { useState, useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -16,8 +16,13 @@ function App() {
   
   const [pokemon, setPokemon] = useState([])
   const [count, setCount] = useState(25)
+
+  const pokemonRef = useRef(null);
+  const homeRef = useRef(null);
+  const joinRef = useRef(null);
   
   useEffect(() => {
+    window.scrollTo(0, 0)
     axios.get(URL + '?limit=' + count + '&offset=0')
     .then(response => {
       console.log('changed')
@@ -28,25 +33,30 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar/>
-        <HomeWrapper/>
+        <Navbar pokemonRef={pokemonRef} joinRef={joinRef} homeRef={homeRef}/>
+        <HomeWrapper homeRef={homeRef}/>
         <Routes>
-            <Route path='/' element={<Pokemons pokemons={pokemon} count={count} setCount={setCount}/>}></Route>
+            <Route path='/' element={<Pokemons pokemons={pokemon} count={count} setCount={setCount} pokemonRef={pokemonRef}/>}></Route>
             <Route path='/pokemon' element={<Pokemon />}>
               <Route path=':pokemonId' element={<Pokemon />} />
             </Route>
         </Routes>
+        <JoinWrapper joinRef={joinRef} />
       </Router>
-      <Join/>
       <Footer/>
     </>
   );
 }
 
 
-function HomeWrapper() {
+function HomeWrapper({ homeRef }) {
   const location = useLocation();
-  return location.pathname === '/' && <Home/>;
+  return location.pathname === '/' && <Home homeRef={homeRef}/>;
+}
+
+function JoinWrapper({ joinRef }) {
+  const location = useLocation();
+  return location.pathname === '/' && <Join joinRef={joinRef}/>;
 }
 
 export default App;

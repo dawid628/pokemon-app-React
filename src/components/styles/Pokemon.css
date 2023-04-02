@@ -1,6 +1,6 @@
 .pokemon-view {
     display: flex;
-    height: 25rem;
+    height: 100vh;
     margin-top: 15rem;
     margin-bottom: 10rem;
     justify-content: center;

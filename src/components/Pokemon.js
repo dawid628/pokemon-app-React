@@ -35,6 +35,7 @@ const Pokemon = (props) => {
   const URL = `https://pokeapi.co/api/v2/pokemon/${params.pokemonId}`
   
   useEffect(() => {
+    window.scrollTo(0, 0)
     axios.get(URL).then((response) => {
       console.log(response.data)
       setPokemon(response.data)

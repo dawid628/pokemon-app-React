@@ -26,7 +26,6 @@ const Footer = () => {
         <footer className='bottom'>
             <div className='legal'>
                 <span>Copyright © 2023, PokeSphere</span>
-                <a>License</a>
             </div>
             <div className='links'>
             <a href='https://github.com/dawid628' rel='noreferrer' target="_blank"><AiFillGithub className='footer-icon'/></a>

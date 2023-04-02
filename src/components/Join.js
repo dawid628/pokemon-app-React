@@ -1,9 +1,9 @@
 import './styles/Join.css'
 import React from 'react';
 
-const Join = () => {
+const Join = ({joinRef}) => {
   return (
-    <div className="discord-invite">
+    <div ref={joinRef} className="discord-invite">
       <h2>Join us via</h2>
       <p>Discord</p>
       <h4>Socialize with other pokémon fans!</h4>
