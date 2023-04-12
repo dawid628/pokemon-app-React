@@ -1,71 +1,39 @@
-# Project in production, documentation soon
-# Getting Started with Create React App
+# PokeSphere
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+PokeSphere is a React-based single-page application that allows users to browse and explore information about various Pokemon characters. With a sleek design and user-friendly interface, PokeSphere is an engaging and intuitive platform for both fans and newcomers to the Pokemon universe.
 
-## Available Scripts
+## Technologies
+Project is built using the following technologies:
+- HTML
+- CSS
+- JavaScript
+- React.js
+The project also uses the following libraries:
+- React Router DOM
+- React Icons
+- Axios
 
-In the project directory, you can run:
+## Installation and Usage
+1. Clone or download the project
+2. Run `npm install` to install necessary libraries and files
+3. Run `npm start` to start the application
+The app will open in your default browser at http://localhost:3000/.
 
-### `npm start`
+## Features
+- Sticky top menu that scrolls with the page. Clicking on a navigation link will automatically scroll to the chosen content.
+- Home component that displays the name of the app, a slogan, and images of Pokemon
+- Pokemon component that displays images, names, and numbers of loaded Pokemons (20 by default). Clicking on a single Pokemon redirects the user to a details page.
+- Load more button that adds another 20 Pokemons to the current list
+- Discord invite component
+- Footer with contact information
+- Details page that displays information about a selected Pokemon. Hovering over a Pokemon stat icon displays a tooltip with information about that stat.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Purpose
+The purpose of this project was to learn JavaScript, React.js, and Git/GitHub. Additionally, it was an opportunity to practice front-end web development and working with APIs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
+PokeSphere is licensed under the MIT License, which means that it is free to use, modify, and distribute, subject to certain conditions. For more information about MIT License visit page [MIT](https://opensource.org/license/mit/).
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Demo
+View a live demo of the application at: [PokeSphere](https://dawid628.github.io/pokemon-app-React/).
