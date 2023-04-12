@@ -9,6 +9,7 @@ Project is built using the following technologies:
 - CSS
 - JavaScript
 - React.js
+
 The project also uses the following libraries:
 - React Router DOM
 - React Icons
