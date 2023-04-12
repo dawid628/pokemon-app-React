@@ -1,7 +1,9 @@
 # PokeSphere
 
-## Project Description
 PokeSphere is a React-based single-page application that allows users to browse and explore information about various Pokemon characters. With a sleek design and user-friendly interface, PokeSphere is an engaging and intuitive platform for both fans and newcomers to the Pokemon universe.
+
+## Demo
+View a live demo of the application at: [PokeSphere](https://dawid628.github.io/pokemon-app-React/).
 
 ## Technologies
 Project is built using the following technologies:
@@ -36,6 +38,3 @@ The goal of creating PokeSphere was to learn and practice various programming co
 
 ## License
 PokeSphere is licensed under the MIT License, which means that it is free to use, modify, and distribute, subject to certain conditions. For more information about MIT License visit page [MIT](https://opensource.org/license/mit/).
-
-## Demo
-View a live demo of the application at: [PokeSphere](https://dawid628.github.io/pokemon-app-React/).
