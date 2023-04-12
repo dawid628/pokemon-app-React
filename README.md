@@ -1,6 +1,6 @@
 # PokeSphere
 
-PokeSphere is a React-based single-page application that allows users to browse and explore information about various Pokemon characters. With a sleek design and user-friendly interface, PokeSphere is an engaging and intuitive platform for both fans and newcomers to the Pokemon universe.
+PokeSphere is a React-based single-page application that allows users to browse and explore information about various Pokemon characters. With a sleek design and user-friendly interface, PokeSphere is an engaging and intuitive platform for both fans and newcomers to the Pokemon universe. The application uses the free PokeAPI, which is available online [here](https://pokeapi.co/).
 
 ## Demo
 View a live demo of the application at: [PokeSphere](https://dawid628.github.io/pokemon-app-React/).
