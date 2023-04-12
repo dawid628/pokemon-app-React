@@ -19,6 +19,7 @@ The project also uses the following libraries:
 1. Clone or download the project
 2. Run `npm install` to install necessary libraries and files
 3. Run `npm start` to start the application
+
 The app will open in your default browser at http://localhost:3000/.
 
 ## Features
