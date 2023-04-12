@@ -32,7 +32,7 @@ The app will open in your default browser at http://localhost:3000/.
 - Details page that displays information about a selected Pokemon. Hovering over a Pokemon stat icon displays a tooltip with information about that stat.
 
 ## Purpose
-The purpose of this project was to learn JavaScript, React.js, and Git/GitHub. Additionally, it was an opportunity to practice front-end web development and working with APIs.
+The goal of creating PokeSphere was to learn and practice various programming concepts, such as JavaScript, React, and Git, while also building a useful and engaging platform for Pokemon enthusiasts. By working on this project, the author aimed to enhance his coding skills and contribute to the open-source community.
 
 ## License
 PokeSphere is licensed under the MIT License, which means that it is free to use, modify, and distribute, subject to certain conditions. For more information about MIT License visit page [MIT](https://opensource.org/license/mit/).
